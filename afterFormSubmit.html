@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Using this 2 links from getbootstrap.com for using bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- external js  -->
+    <script src="./afterFormSubmiting.js"></script>
+
+    <link rel="stylesheet" href="../AfterForm/afterFormSubmiting.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form class="frm" name="myform" onsubmit="return checkAll()">
+
+                    <div class="form-group">
+                        <label for="" class="form-label">Enter Your FullName:</label>
+                        <input type="text" name="fname" id="fname" placeholder="enter your fullname"
+                            class="form-control">
+
+                    <label for="" class="form-label">Enter Your LastName:</label>
+                    <input type="text" name="lname" id="lname" placeholder="enter your lastname" class="form-control">
+
+                    <label for="" class="form-label">Enter Email:</label>
+                    <input type="email" name="email" id="email" placeholder="enter your Email" class="form-control">
+
+                    <label for="" class="form-label">Enter Password:</label>
+                    <input type="password" name="password" id="password" placeholder="enter your pass" class="form-control">
+
+                    <label for="" class="form-label">Enter Number:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="enter your phone no" class="form-control"> 
+                    </div>
+
+                    <div>
+                        <label class="form-label">Select Your Qualification:</label><br>
+                        <input  type="checkbox" name="edu" value="ssc" class="form-check-input"><span class="edu">SSC</span>
+                        <input type="checkbox" name="edu" value="hsc" class="form-check-input">HSC
+                        <input type="checkbox" name="edu" value="ug" class="form-check-input">UG
+                        <input type="checkbox" name="edu" value="pg" class="form-check-input">PG
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="">Select Your Course:</label>
+                        <select name="course" id="course" class="form-control">
+                            <option value="">Select Your Course</option>
+                            <option value="react">React</option>
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                            <option value="angular">Angular</option>
+                        </select>
+                    </div> 
+
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
